@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from 'next/font/google'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import "./globals.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`${poppins.variable} font-poppins antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
